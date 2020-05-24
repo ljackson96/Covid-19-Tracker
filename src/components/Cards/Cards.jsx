@@ -18,7 +18,7 @@ export default function Cards({ data: {confirmed, recovered, deaths, lastUpdate 
                         <Typography variant="h5"><CountUp start={0} end={confirmed.value} duration={3.5} separator=","
                         /></Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Active Cases of COVID-19</Typography>
+                        <Typography variant="body2">Number of COVID-19 Cases</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.recovered)}>
