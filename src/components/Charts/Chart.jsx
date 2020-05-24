@@ -22,7 +22,7 @@ export default function Chart() {
                     datasets: [{
                         data: dailyData.map(({ confirmed }) => confirmed),
                         label: "Confirmed",
-                        borderColor: '#3333ff',
+                        borderColor: 'blue',
                         fill: true,
                     }, {
                             data: dailyData.map(({ deaths }) => deaths),
